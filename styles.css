@@ -1,0 +1,90 @@
+/*
+  Color palette
+  Primary dark color: #388E3C
+  Light primary color: #C8E6C9
+  Primary color: #4CAF50
+  Text: #FFFFFF
+  Accent color: #FF9800
+  Primary text: #212121
+  Secondary text: #757575
+  Divider color: #BDBDBD
+*/
+
+body {
+  color: #212121;
+  position: relative;
+}
+
+.navbar {
+  background-color: #388E3C;
+}
+
+.jumbotron {
+  background-color: #C8E6C9;
+  border-radius: 0;
+}
+
+.nav-tabs .nav-link {
+  color: #212121;
+}
+
+.nav-tabs .nav-link.active {
+  color: #212121;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #388E3C;
+  border: 0;
+}
+
+.btn-secondary {
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: #388E3C;
+  border: 0;
+}
+
+.table .thead-dark th {
+  background-color: #388E3C;
+  border: 0;
+}
+
+.accordion .card {
+  border: 1px solid #C8E6C9;
+}
+
+.accordion .card-header {
+  background-color: #FFF;
+  border-bottom: 1px solid #C8E6C9;
+  cursor: pointer;
+}
+
+.accordion .card-header .btn {
+  color: #212121;
+  text-decoration: none;
+}
+
+.btn.btn-link {
+  padding: 0;
+}
+
+.media-img {
+  border-right: 1px solid #C8E6C9;
+}
+
+.skills-container .fab {
+  font-size: 52px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background-color: #388E3C;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
