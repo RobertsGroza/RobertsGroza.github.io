@@ -74,7 +74,7 @@ body {
     border-right: 1px solid var(--primary-light);
 }
 
-.skills-container .fab {
+.skills .fab {
     font-size: 64px;
     color: var(--primary);
 }
