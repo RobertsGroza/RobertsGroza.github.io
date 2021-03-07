@@ -66,12 +66,17 @@ body {
     padding: 0;
 }
 
+.btn-large {
+    font-size: 1.5rem;
+}
+
 .media-img {
     border-right: 1px solid var(--primary-light);
 }
 
 .skills-container .fab {
-    font-size: 52px;
+    font-size: 64px;
+    color: var(--primary);
 }
 
 footer {

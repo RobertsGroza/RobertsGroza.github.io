@@ -29,9 +29,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact-me">Contact me</a>
-            </li>
         </ul>
     </div>
 </nav>
@@ -67,6 +64,10 @@
                     I read about programming before sleep for better dreams
                 </li>
             </ul>
+
+            <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#contactModal">
+                Contact me <i class="far fa-envelope"></i>
+            </button>
         </div>
         <div class="col-md-6 col-12 order-md-2 order-1 text-center">
             <img src="img/profila-foto.jpeg" alt="photo" class="w-75 rounded mb-4 mb-md-0"/>
@@ -280,44 +281,40 @@
             <h3 class="text-uppercase" id="skills">Skills</h3>
             <div class="row my-5">
                 <div class="col">
-                    <i class="fab fa-symfony" data-toggle="tooltip" data-placement="top"
-                       title="Symfony framework"></i>
+                    <i class="fab fa-symfony" data-toggle="tooltip" data-placement="top" title="Symfony framework"></i>
                 </div>
-                <div class="col"><i class="fab fa-react" data-toggle="tooltip" data-placement="top"
-                                    title="React.js"></i></div>
-                <div class="col"><i class="fab fa-node" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
+                <div class="col">
+                    <i class="fab fa-react" data-toggle="tooltip" data-placement="top" title="React.js"></i></div>
+                <div class="col">
+                    <i class="fab fa-node" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
                 </div>
-                <div class="col"><i class="fab fa-laravel" data-toggle="tooltip" data-placement="top"
-                                    title="Laravel framework"></i></div>
+                <div class="col">
+                    <i class="fab fa-laravel" data-toggle="tooltip" data-placement="top" title="Laravel framework"></i>
+                </div>
             </div>
             <div class="row my-5">
-                <div class="col"><i class="fab fa-docker" data-toggle="tooltip" data-placement="top" title="Docker"></i>
+                <div class="col">
+                    <i class="fab fa-docker" data-toggle="tooltip" data-placement="top" title="Docker"></i>
                 </div>
-                <div class="col"><i class="fab fa-git-alt" data-toggle="tooltip" data-placement="top"
-                                    title="Git version control"></i></div>
-                <div class="col"><i class="fab fa-linux" data-toggle="tooltip" data-placement="top" title="Ubuntu"></i>
+                <div class="col">
+                    <i class="fab fa-git-alt" data-toggle="tooltip" data-placement="top"
+                       title="Git version control"></i>
                 </div>
-                <div class="col"><i class="fab fa-html5" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
+                <div class="col">
+                    <i class="fab fa-linux" data-toggle="tooltip" data-placement="top" title="Ubuntu"></i>
+                </div>
+                <div class="col">
+                    <i class="fab fa-html5" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-3"><i class="fab fa-css3-alt" data-toggle="tooltip" data-placement="top"
-                                      title="CSS3"></i></div>
-                <div class="col-3"><i class="fab fa-php" data-toggle="tooltip" data-placement="top" title="PHP"></i>
+                <div class="col-3 offset-3">
+                    <i class="fab fa-css3-alt" data-toggle="tooltip" data-placement="top" title="CSS3"></i>
+                </div>
+                <div class="col-3">
+                    <i class="fab fa-php" data-toggle="tooltip" data-placement="top" title="PHP"></i>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <hr/>
-
-    <div class="row my-5">
-        <div class="container">
-            <h3 class="text-uppercase" id="contact-me">Contact me</h3>
-            <p>If you are interested in my services or you just want to talk with me, contact me!</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-                Contact ME! <i class="far fa-envelope"></i>
-            </button>
         </div>
     </div>
 </div>
@@ -338,46 +335,45 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-4 col-form-label">Your name</label>
+                        <label for="name" class="col-sm-4 col-form-label">Your name</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control">
+                            <input id="name" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="input2" class="col-sm-4 col-form-label">Organization</label>
+                        <label for="organization" class="col-sm-4 col-form-label">Organization</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control">
+                            <input id="organization" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+                        <label for="email" class="col-sm-4 col-form-label">Email</label>
                         <div class="col-sm-8">
-                            <input type="email" class="form-control">
+                            <input id="email" type="email" class="form-control">
                         </div>
                     </div>
                     <fieldset class="form-group">
                         <div class="row">
-                            <legend class="col-form-label col-sm-4 pt-0"></legend>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 offset-sm-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
                                            value="option1" checked>
                                     <label class="form-check-label" for="gridRadios1">
-                                        You wan't to hire me
+                                        You wanna to hire me
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
                                            value="option2">
                                     <label class="form-check-label" for="gridRadios2">
-                                        You wan't to be friends with me
+                                        You wanna to be friends with me
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-4 col-form-label">Message</label>
+                        <label for="exampleFormControlTextarea1" class="col-sm-4 col-form-label">Message</label>
                         <div class="col-sm-8">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
