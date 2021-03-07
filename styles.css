@@ -1,90 +1,85 @@
-/*
-  Color palette
-  Primary dark color: #388E3C
-  Light primary color: #C8E6C9
-  Primary color: #4CAF50
-  Text: #FFFFFF
-  Accent color: #FF9800
-  Primary text: #212121
-  Secondary text: #757575
-  Divider color: #BDBDBD
-*/
+:root {
+    --primary: #0d1748;
+    --primary-light: #ddeffa;
+    --text: #212121;
+    --background: #FFFFFF;
+}
 
 body {
-  color: #212121;
-  position: relative;
+    color: var(--text);
+    position: relative;
 }
 
 .navbar {
-  background-color: #388E3C;
+    background-color: var(--primary);
 }
 
 .jumbotron {
-  background-color: #C8E6C9;
-  border-radius: 0;
+    background-color: var(--primary-light);
+    border-radius: 0;
 }
 
 .nav-tabs .nav-link {
-  color: #212121;
+    color: var(--text);
 }
 
 .nav-tabs .nav-link.active {
-  color: #212121;
-  font-weight: bold;
+    color: var(--text);
+    font-weight: bold;
 }
 
 .btn-primary {
-  background-color: #388E3C;
-  border: 0;
+    background-color: var(--primary);
+    border: 0;
 }
 
 .btn-secondary {
-  border: 0;
+    border: 0;
 }
 
 .btn-primary:hover {
-  background-color: #388E3C;
-  border: 0;
+    background-color: var(--primary);
+    border: 0;
 }
 
 .table .thead-dark th {
-  background-color: #388E3C;
-  border: 0;
+    background-color: var(--primary);
+    border: 0;
 }
 
 .accordion .card {
-  border: 1px solid #C8E6C9;
+    border: 1px solid var(--primary-light);
 }
 
 .accordion .card-header {
-  background-color: #FFF;
-  border-bottom: 1px solid #C8E6C9;
-  cursor: pointer;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--primary-light);
+    cursor: pointer;
 }
 
 .accordion .card-header .btn {
-  color: #212121;
-  text-decoration: none;
+    color: var(--text);
+    text-decoration: none;
 }
 
 .btn.btn-link {
-  padding: 0;
+    padding: 0;
 }
 
 .media-img {
-  border-right: 1px solid #C8E6C9;
+    border-right: 1px solid var(--primary-light);
 }
 
 .skills-container .fab {
-  font-size: 52px;
+    font-size: 52px;
 }
 
 footer {
-  margin-top: 100px;
-  height: 100px;
-  background-color: #388E3C;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin-top: 100px;
+    height: 100px;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
